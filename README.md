@@ -34,17 +34,10 @@
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">&#39;ignore&#39;</span>)</span></code></pre></div>
 </div>
-<div class="cell code" data-execution_count="2" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="26h5GgOhsmVP" data-outputId="f79872c3-62db-4c2a-cc5a-7eaa8ab6826d">
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> google.colab <span class="im">import</span> drive</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>drive.mount(<span class="st">&#39;/content/drive&#39;</span>)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>Mounted at /content/drive
-</code></pre>
-</div>
-</div>
+
 <div class="cell code" data-execution_count="3" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="6KJxCRklsZd1" data-outputId="4fcbed2c-ccc8-4aa1-c92a-737c620d9d62">
 <div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Importing the data and general information</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&#39;/content/drive/MyDrive/Self learning/Fraudulent detection/Fraud.csv&#39;</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&#39;Fraud.csv&#39;</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div>
 <div class="output stream stdout">
 <pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
@@ -910,8 +903,7 @@ memory usage: 1.5+ MB
 <span id="cb40-27"><a href="#cb40-27" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> classifier <span class="kw">in</span> [LogisticRegression(random_state <span class="op">=</span> <span class="dv">0</span>), RandomForestClassifier(random_state <span class="op">=</span> <span class="dv">0</span>), GaussianNB()]:</span>
 <span id="cb40-28"><a href="#cb40-28" aria-hidden="true" tabindex="-1"></a>  classifier.fit(xtrain, ytrain)</span>
 <span id="cb40-29"><a href="#cb40-29" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(classifier)</span>
-<span id="cb40-30"><a href="#cb40-30" aria-hidden="true" tabindex="-1"></a>  performace(xtrain, ytrain, xtest, ytest, classifier)</span>
-<span id="cb40-31"><a href="#cb40-31" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&#39;*******&#39;</span>)</span></code></pre></div>
+<span id="cb40-30"><a href="#cb40-30" aria-hidden="true" tabindex="-1"></a>  performace(xtrain, ytrain, xtest, ytest, classifier)</span></code></pre></div>
 <div class="output stream stdout">
 <pre><code>LogisticRegression(random_state=0)
               precision    recall  f1-score   support
@@ -929,7 +921,7 @@ weighted avg       0.24      0.49      0.33      4928
 <p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/fd6f3906b43725452820a8888061a5a217cd5d19.png" /></p>
 </div>
 <div class="output stream stdout">
-<pre><code>*******
+<pre><code>
 RandomForestClassifier(random_state=0)
               precision    recall  f1-score   support
 
@@ -946,7 +938,7 @@ weighted avg       0.99      0.99      0.99      4928
 <p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/67323a66c501ee051689e591a477c68a54e341b5.png" /></p>
 </div>
 <div class="output stream stdout">
-<pre><code>*******
+<pre><code>
 GaussianNB()
               precision    recall  f1-score   support
 
@@ -963,7 +955,7 @@ weighted avg       0.66      0.65      0.65      4928
 <p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/cb98e16d2d045a976a0dd5bfcf5bbc016f24fda9.png" /></p>
 </div>
 <div class="output stream stdout">
-<pre><code>*******
+<pre><code>
 </code></pre>
 </div>
 </div>
@@ -979,5 +971,3 @@ weighted avg       0.66      0.65      0.65      4928
 <li><p>As this is the case of fraud detection, detecting of a fraud transactions as non-fraud is worse than detecting of a non-fraud transacation as fraud.</p></li>
 </ul>
 </div>
-</body>
-</html>

@@ -282,7 +282,7 @@ Number of non-fraud Transactions =  6354407
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/527d74545f11f06041af7a0972d33fd30312db93.png" /></p>
+<p><img src="/vertopal_a540735cf850400b8eca8400c6884a78/527d74545f11f06041af7a0972d33fd30312db93.png" /></p>
 </div>
 </div>
 <div class="cell markdown" id="fMe0ywyk1_Ys">

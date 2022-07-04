@@ -1,3 +1,218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>c072d6814a8a45a986e926078656beee</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="fradulent-transactions---classification-of-imbalanced-dataset" class="cell markdown" id="TAx_uBCYESrH">
 <h1>Fradulent Transactions <br> (Classification of Imbalanced Dataset)</h1>
 <h2 id="introduction">Introduction</h2>
 <ul>
@@ -268,7 +483,7 @@ memory usage: 534.0+ MB
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/530ac2f91943b33b57728d014323b3e5a3e87205.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/530ac2f91943b33b57728d014323b3e5a3e87205.png" /></p>
 </div>
 </div>
 <div class="cell code" data-execution_count="7" data-colab="{&quot;height&quot;:325,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="YGWNjmdGvTfc" data-outputId="dd157d2d-d30d-4706-b0ef-42da1e1f2221">
@@ -282,7 +497,7 @@ Number of non-fraud Transactions =  6354407
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="/vertopal_a540735cf850400b8eca8400c6884a78/527d74545f11f06041af7a0972d33fd30312db93.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/527d74545f11f06041af7a0972d33fd30312db93.png" /></p>
 </div>
 </div>
 <div class="cell markdown" id="fMe0ywyk1_Ys">
@@ -334,7 +549,7 @@ dtype: int64</code></pre>
 <div class="cell code" data-colab="{&quot;height&quot;:291,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="xxT1VAkYzgrz" data-outputId="5a709115-cca6-4120-b2eb-f56c0a2aa867">
 <div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>sns.swarmplot(x <span class="op">=</span> <span class="st">&#39;type&#39;</span>, y <span class="op">=</span> <span class="st">&#39;amount&#39;</span>, hue <span class="op">=</span> <span class="st">&#39;isFraud&#39;</span>, data <span class="op">=</span> df_vis)<span class="op">;</span></span></code></pre></div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/e9a6705ff785b8c64825161b7b46d0a52ef04fee.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/e9a6705ff785b8c64825161b7b46d0a52ef04fee.png" /></p>
 </div>
 </div>
 <div class="cell markdown" id="xILgeSXK1uxI">
@@ -350,7 +565,7 @@ dtype: int64</code></pre>
 <div class="cell code" data-colab="{&quot;height&quot;:290,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="hk4wdbcz4C5A" data-outputId="d4d77fb3-5a48-43d3-ee73-981b23f8b884">
 <div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(x <span class="op">=</span> <span class="st">&#39;oldbalanceOrg&#39;</span>, y <span class="op">=</span> <span class="st">&#39;amount&#39;</span>, hue <span class="op">=</span> <span class="st">&#39;isFraud&#39;</span>, data <span class="op">=</span> df_vis)<span class="op">;</span></span></code></pre></div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/cfda7cad26c2b42842d42a45796352d3f224d151.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/cfda7cad26c2b42842d42a45796352d3f224d151.png" /></p>
 </div>
 </div>
 <div class="cell markdown" id="D_raWRcV4SKr">
@@ -368,7 +583,7 @@ dtype: int64</code></pre>
 <span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(col,<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span>
 <span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a> </span></code></pre></div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/80ad5484ce04a3e19d751fbdb2c80a9be0ea3765.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/80ad5484ce04a3e19d751fbdb2c80a9be0ea3765.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>amount 
@@ -376,7 +591,7 @@ dtype: int64</code></pre>
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/1c48071123110be4c6a8c1a714378e64d0148589.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/1c48071123110be4c6a8c1a714378e64d0148589.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>oldbalanceOrg 
@@ -384,7 +599,7 @@ dtype: int64</code></pre>
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/405e970ec19ed61d9d80723ae94fffa1c986644d.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/405e970ec19ed61d9d80723ae94fffa1c986644d.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>newbalanceOrig 
@@ -392,7 +607,7 @@ dtype: int64</code></pre>
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/0843f4f19eced5e63f0b17bae2651dbb88a45b31.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/0843f4f19eced5e63f0b17bae2651dbb88a45b31.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>oldbalanceDest 
@@ -400,7 +615,7 @@ dtype: int64</code></pre>
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/34911f19a05257fe73c7dde7c47f64dd214c5d28.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/34911f19a05257fe73c7dde7c47f64dd214c5d28.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>newbalanceDest 
@@ -679,7 +894,7 @@ weighted avg       1.00      1.00      1.00   1908786
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/dbb3b0f280ae4c4c332d1e57cbdcb57da373431e.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/dbb3b0f280ae4c4c332d1e57cbdcb57da373431e.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>RandomForestClassifier(random_state=0)
@@ -695,7 +910,7 @@ weighted avg       1.00      1.00      1.00   1908786
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/e715f75a603fd2274ebbcd4889994628b40b8c79.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/e715f75a603fd2274ebbcd4889994628b40b8c79.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>GaussianNB()
@@ -711,7 +926,7 @@ weighted avg       1.00      0.82      0.90   1908786
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/add3ca905f1a8b942c39982afe67c7600cf79821.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/add3ca905f1a8b942c39982afe67c7600cf79821.png" /></p>
 </div>
 </div>
 <div class="cell markdown" id="Krpx9aI9HfnA">
@@ -793,7 +1008,7 @@ memory usage: 1.5+ MB
 <span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
 <span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/dce8e14723bbc4bdb3444960dd44c0e7087d9683.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/dce8e14723bbc4bdb3444960dd44c0e7087d9683.png" /></p>
 </div>
 </div>
 <div class="cell markdown" id="zvYFQipi7fdD">
@@ -808,7 +1023,7 @@ memory usage: 1.5+ MB
 <div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Amount Vs transaction type</span></span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>sns.swarmplot(x <span class="op">=</span> <span class="st">&#39;type&#39;</span>, y <span class="op">=</span> <span class="st">&#39;amount&#39;</span>, data <span class="op">=</span> df.sample(<span class="dv">1000</span>), hue<span class="op">=</span><span class="st">&#39;isFraud&#39;</span>)<span class="op">;</span></span></code></pre></div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/46c766774ea8cefbebda709af16193254d77cd74.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/46c766774ea8cefbebda709af16193254d77cd74.png" /></p>
 </div>
 </div>
 <div class="cell markdown" id="_999aCCD7w1m">
@@ -823,7 +1038,7 @@ memory usage: 1.5+ MB
 <span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  plt.show()</span>
 <span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(col,<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>)</span></code></pre></div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/0301e1f95af474e6afb6dd5b14728c0e27e75785.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/0301e1f95af474e6afb6dd5b14728c0e27e75785.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>amount 
@@ -831,7 +1046,7 @@ memory usage: 1.5+ MB
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/2ef2055eeaf56574055af6fd76d4c8f9df27d0cc.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/2ef2055eeaf56574055af6fd76d4c8f9df27d0cc.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>oldbalanceOrg 
@@ -839,7 +1054,7 @@ memory usage: 1.5+ MB
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/4f728514c2677ad0f83bed322e53ea198c2183c2.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/4f728514c2677ad0f83bed322e53ea198c2183c2.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>newbalanceOrig 
@@ -847,7 +1062,7 @@ memory usage: 1.5+ MB
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/744f84dc0386d2366c38ac59f198de5e349de6dd.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/744f84dc0386d2366c38ac59f198de5e349de6dd.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>oldbalanceDest 
@@ -855,7 +1070,7 @@ memory usage: 1.5+ MB
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/d37bee9f17751337a118767adb0fdb459422f290.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/d37bee9f17751337a118767adb0fdb459422f290.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>newbalanceDest 
@@ -926,7 +1141,7 @@ weighted avg       0.24      0.49      0.33      4928
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/fd6f3906b43725452820a8888061a5a217cd5d19.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/fd6f3906b43725452820a8888061a5a217cd5d19.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>*******
@@ -943,7 +1158,7 @@ weighted avg       0.99      0.99      0.99      4928
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/67323a66c501ee051689e591a477c68a54e341b5.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/67323a66c501ee051689e591a477c68a54e341b5.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>*******
@@ -960,7 +1175,7 @@ weighted avg       0.66      0.65      0.65      4928
 </code></pre>
 </div>
 <div class="output display_data">
-<p><img src="vertopal_a540735cf850400b8eca8400c6884a78/cb98e16d2d045a976a0dd5bfcf5bbc016f24fda9.png" /></p>
+<p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/cb98e16d2d045a976a0dd5bfcf5bbc016f24fda9.png" /></p>
 </div>
 <div class="output stream stdout">
 <pre><code>*******

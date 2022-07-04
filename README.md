@@ -21,7 +21,6 @@
 <li>Conclusion</li>
 </ul></li>
 </ul>
-</section>
 <section id="general-overview-of-the-data" class="cell markdown" id="oAhetDPLsXi9">
 <h1>General overview of the data</h1>
 </section>

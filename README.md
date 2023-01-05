@@ -1,4 +1,4 @@
-<h1>Fradulent Transactions <br> (Classification of Imbalanced Dataset)</h1>
+# Fradulent Transactions (Classification of Imbalanced Dataset)
 <h2 id="introduction">Introduction</h2>
 <ul>
 <li><p>FRAUDULENT TRANSACTIONS is a case of imbalanced dataset. Imbalanced dataset are the dataset where the presence of once class is very high compared to the second class. For example spame data for email.</p></li>

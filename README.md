@@ -155,102 +155,29 @@ df.head(5)
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-95163111-618c-4c00-bbdd-c4f15554a89a')"
-              title="Convert this dataframe to an interactive table."
-              style="display:none;">
-        
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-       width="24px">
-    <path d="M0 0h24v24H0V0z" fill="none"/>
-    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
-  </svg>
-      </button>
-      
-  <style>
-    .colab-df-container {
-      display:flex;
-      flex-wrap:wrap;
-      gap: 12px;
-    }
 
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
+```python
+plt.style.use('dark_background')
+fig = plt.gcf()
+fig.set_size_inches(10,6)
+sns.scatterplot(x = 'oldbalanceOrg', y = 'newbalanceDest', data = df[df['isFraud'] == 1], color = 'red', label = 'Fraud', marker = '*');
+sns.scatterplot(x = 'oldbalanceOrg', y = 'newbalanceDest', data = df[df['isFraud'] == 0], color = 'green', label = 'non-Fraud', marker = '+');
+plt.legend()
+plt.show()
+```
 
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-      <script>
-        const buttonEl =
-          document.querySelector('#df-95163111-618c-4c00-bbdd-c4f15554a89a button.colab-df-convert');
-        buttonEl.style.display =
-          google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-        async function convertToInteractive(key) {
-          const element = document.querySelector('#df-95163111-618c-4c00-bbdd-c4f15554a89a');
-          const dataTable =
-            await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                     [key], {});
-          if (!dataTable) return;
-
-          const docLinkHtml = 'Like what you see? Visit the ' +
-            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-            + ' to learn more about interactive tables.';
-          element.innerHTML = '';
-          dataTable['output_type'] = 'display_data';
-          await google.colab.output.renderOutput(dataTable, element);
-          const docLink = document.createElement('div');
-          docLink.innerHTML = docLinkHtml;
-          element.appendChild(docLink);
-        }
-      </script>
-    </div>
-  </div>
-  
-</div>
-</div>
-<div class="cell code" data-execution_count="6" data-colab="{&quot;height&quot;:399,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="CNfZZNC11SnF" data-outputId="9f98fd3c-0dc7-4ecc-8d0d-23f894e097b6">
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># General view of the data lables</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>plt.style.use(<span class="st">&#39;dark_background&#39;</span>)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.gcf()</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>fig.set_size_inches(<span class="dv">10</span>, <span class="dv">6</span>)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(x <span class="op">=</span> <span class="st">&#39;oldbalanceOrg&#39;</span>, y <span class="op">=</span> <span class="st">&#39;newbalanceDest&#39;</span>, data <span class="op">=</span> df[df[<span class="st">&#39;isFraud&#39;</span>] <span class="op">==</span> <span class="dv">1</span>], color <span class="op">=</span> <span class="st">&#39;red&#39;</span>, label <span class="op">=</span> <span class="st">&#39;Fraud&#39;</span>, marker <span class="op">=</span> <span class="st">&#39;*&#39;</span>)<span class="op">;</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(x <span class="op">=</span> <span class="st">&#39;oldbalanceOrg&#39;</span>, y <span class="op">=</span> <span class="st">&#39;newbalanceDest&#39;</span>, data <span class="op">=</span> df[df[<span class="st">&#39;isFraud&#39;</span>] <span class="op">==</span> <span class="dv">0</span>], color <span class="op">=</span> <span class="st">&#39;green&#39;</span>, label <span class="op">=</span> <span class="st">&#39;non-Fraud&#39;</span>, marker <span class="op">=</span> <span class="st">&#39;+&#39;</span>)<span class="op">;</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
 <div class="output display_data">
 <p><img src="vertopal_cee06adbe43041f18c270e855e7b44fe/530ac2f91943b33b57728d014323b3e5a3e87205.png" /></p>
 </div>
 </div>
-<div class="cell code" data-execution_count="7" data-colab="{&quot;height&quot;:325,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="YGWNjmdGvTfc" data-outputId="dd157d2d-d30d-4706-b0ef-42da1e1f2221">
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Transaction labels </span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Number of fraud Transactions = &#39;</span>, df[df[<span class="st">&#39;isFraud&#39;</span>] <span class="op">==</span> <span class="dv">1</span>].shape[<span class="dv">0</span>])</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Number of non-fraud Transactions = &#39;</span>, df[df[<span class="st">&#39;isFraud&#39;</span>] <span class="op">==</span> <span class="dv">0</span>].shape[<span class="dv">0</span>])</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>sns.countplot(x <span class="op">=</span> <span class="st">&#39;isFraud&#39;</span>, data <span class="op">=</span> df)<span class="op">;</span></span></code></pre></div>
+
+```python
+# Fraud vs non-fraud transactions count
+print('Number of fraud Transactions = ', df[df['isFraud'] == 1].shape[0])
+print('Number of non-fraud Transactions = ', df[df['isFraud'] == 0].shape[0])
+sns.countplot(x = 'isFraud', data = df);
+```
+
 <div class="output stream stdout">
 <pre><code>Number of fraud Transactions =  8213
 Number of non-fraud Transactions =  6354407
@@ -268,32 +195,8 @@ Number of non-fraud Transactions =  6354407
 <li>Column isFlagFraud contains 1, for all the transaction which are more than 200 dollars otherwise 0. Again this is not relevant for us.</li>
 </ul>
 </div>
-<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="ARDYxR66xSN8" data-outputId="3ab03cf6-8e00-4403-9316-281a447f79dd">
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># checking for nans</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>df.isna().<span class="bu">sum</span>()</span></code></pre></div>
-<div class="output execute_result" data-execution_count="7">
-<pre><code>step              0
-type              0
-amount            0
-nameOrig          0
-oldbalanceOrg     0
-newbalanceOrig    0
-nameDest          0
-oldbalanceDest    0
-newbalanceDest    0
-isFraud           0
-isFlaggedFraud    0
-dtype: int64</code></pre>
-</div>
-</div>
-<div class="cell markdown" id="H-wKLcmcxguk">
-<ul>
-<li>It is clear that all the features have the correct data type with zero nans.</li>
-<li>As we can see there are 6362620 samples in this data which is a quite high number. For simplicity we will use some randomaly generated samples.</li>
-</ul>
-</div>
-<section id="visualization" class="cell markdown" id="Cnn6r_O1zKYL">
-<h1>Visualization</h1>
+
+# Visualization
 </section>
 <div class="cell code" id="UEsK_hxG3J7Z">
 <div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Getting a sample of 5000 and saving it for future reference</span></span>

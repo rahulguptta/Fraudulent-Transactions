@@ -64,23 +64,6 @@ df.head(5)
 ```
 
 <div class="output execute_result" data-execution_count="5">
-
-  <div id="df-95163111-618c-4c00-bbdd-c4f15554a89a">
-    <div class="colab-df-container">
-      <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">

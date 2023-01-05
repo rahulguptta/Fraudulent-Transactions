@@ -57,9 +57,12 @@ memory usage: 534.0+ MB
 </code></pre>
 </div>
 </div>
-<div class="cell code" data-execution_count="5" data-colab="{&quot;height&quot;:250,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="N4ZPaiQc1g0V" data-outputId="94a782e9-0efc-42bd-ed70-00a96a18e184">
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># general view</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df.head(<span class="dv">5</span>)</span></code></pre></div>
+
+```python
+# general view
+df.head(5)
+```
+
 <div class="output execute_result" data-execution_count="5">
 
   <div id="df-95163111-618c-4c00-bbdd-c4f15554a89a">

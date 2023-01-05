@@ -1,28 +1,25 @@
-# Fradulent Transactions (Classification of Imbalanced Dataset)
-<h2 id="introduction">Introduction</h2>
-<ul>
-<li><p>FRAUDULENT TRANSACTIONS is a case of imbalanced dataset. Imbalanced dataset are the dataset where the presence of once class is very high compared to the second class. For example spame data for email.</p></li>
-<li><p>The issue with imbalanced data is that most of the classification algorithms are designed for approximately equal sample of both classes.</p></li>
-<li><p>For example if we take case of credit card transanctions, maximum 2-3 out of 100 transactions will be fraud. In this case if I do nothing still the accuracy for zero lable is 96% which is very high.</p></li>
-<li><p>Some classifiers are created in this project for FRAUDULENT TRANSACTIONS and compared. The dataset used for this project is downloaded from <a href="https://www.kaggle.com/datasets/vardhansiramdasu/fraudulent-transactions-prediction">Kaggle</a>.</p></li>
-<li><p>Outline of the Project is</p>
-<ul>
-<li>General overview of the data</li>
-<li>Visualization</li>
-<li>Issues with the Default classifier</li>
-<li>Classification using resampling
-<ul>
-<li>Resampling</li>
-<li>Visualization</li>
-<li>Model pipeline</li>
-<li>Classificassion</li>
-<li>Results</li>
-</ul></li>
-<li>Conclusion</li>
-</ul></li>
-</ul>
-<section id="general-overview-of-the-data" class="cell markdown" id="oAhetDPLsXi9">
-<h1>General overview of the data</h1>
+# Fradulent Transactions 
+### (Classification of Imbalanced Dataset)
+
+# Introduction
+- FRAUDULENT TRANSACTIONS is a case of imbalanced dataset. Imbalanced dataset are the dataset where the presence of once class is very high compared to the second class. For example spame data for email.
+- The issue with imbalanced data is that most of the classification algorithms are designed for approximately equal sample of both classes.
+- For example if we take case of credit card transanctions, maximum 2-3 out of 100 transactions will be fraud. In this case if I do nothing still the accuracy for zero lable is 96% which is very high.
+- Some classifiers are created in this project for FRAUDULENT TRANSACTIONS and compared. The dataset used for this project is downloaded from <a href="https://www.kaggle.com/datasets/vardhansiramdasu/fraudulent-transactions-prediction">Kaggle</a>.
+
+## Outline of the Project is
+- General overview of the data
+- Visualization
+- Issues with the Default classifier
+- Classification using resampling
+- Resampling
+- Visualization
+- Model pipeline
+- Classificassion
+- Results
+- Conclusion
+- 
+## General overview of the data
 </section>
 <div class="cell code" data-execution_count="1" id="L0e1Q8PjIFmz">
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Importing the required Libraries</span></span>
